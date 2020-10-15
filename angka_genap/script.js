@@ -1,5 +1,5 @@
-let angka = prompt ("masukkan angka: ")
-function cekGenap(angkaGenap){
+
+function cekGenap(angka){
     for (angkaGenap = 0; angkaGenap <= angka; angkaGenap ++ ){
         if (angkaGenap % 2 === 0){
             document.write(`${angkaGenap}, `)
@@ -8,7 +8,7 @@ function cekGenap(angkaGenap){
     }
 }
 
-cekGenap()
+cekGenap(prompt("masukkan angka: "))
 
 // alert ("Rules, silahkan masukkan angka untuk menampilkan angka genap")
 // let angka = prompt ("masukkan angka: ")
