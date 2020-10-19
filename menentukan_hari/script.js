@@ -1,17 +1,17 @@
-// optional gunakan array
 
-let arrayHari = ['senin','selasa', 'rabu', 'kamis', 'jumat', 'sabtu', 'minggu','senin']
-let cekHari = arrayHari.indexOf(prompt("masukkan nama hari").toLowerCase())
-let hasilHari = "Hari esok " + arrayHari[cekHari+1] 
-function hari(){
-  if(cekHari!=-1){
-    alert(hasilHari)
-  }else{
-    alert("salah input")
-  }
+function hari(cekHari){
+    let arrayHari = ['senin','selasa', 'rabu', 'kamis', 'jumat', 'sabtu', 'minggu','senin']
+    cekHari = arrayHari.indexOf(cekHari)
+    let hasilHari = "Hari esok " + arrayHari[cekHari+1] 
+    
+    if(cekHari!=-1){
+        alert(hasilHari)
+    }else{
+        alert("salah input")
+    }
 }
 
-hari()
+hari(prompt("Masukkan hari").toLowerCase())
 
 
 

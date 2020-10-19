@@ -1,10 +1,13 @@
 
 function cekGanjil(angka){
-    for (angkaGanjil = 0; angkaGanjil <= angka; angkaGanjil ++ ){
-        if (angkaGanjil % 2 === 1){
-            document.write(`${angkaGanjil}, `)
-        }else{
-        }
+
+    if(!isNaN(angka) && angka >= 0){
+        for (angkaGanjil = 0; angkaGanjil <= angka; angkaGanjil ++ ){
+            if (angkaGanjil % 2 === 1){
+                document.write(`${angkaGanjil}, `)}
+            }
+    }else{
+        alert ( "Salah atuh")
     }
 }
 

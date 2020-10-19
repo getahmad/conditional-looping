@@ -1,10 +1,12 @@
-
 function cekGenap(angka){
-    for (angkaGenap = 0; angkaGenap <= angka; angkaGenap ++ ){
-        if (angkaGenap % 2 === 0){
-            document.write(`${angkaGenap}, `)
-        }else{
-        }
+    
+    if(!isNaN(angka) && angka >= 0){
+        for (angkaGenap = 0; angkaGenap <= angka; angkaGenap ++ ){
+            if (angkaGenap % 2 === 0){
+                document.write(`${angkaGenap}, `)}
+            }
+    }else{
+        alert("salah atuh")
     }
 }
 
@@ -18,5 +20,6 @@ cekGenap(prompt("masukkan angka: "))
 //     }else{
 //     }
 // }
+
 
 
